@@ -12,8 +12,10 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
-  // Configure assetPrefix or else the server won't properly resolve your assets.
-  assetPrefix: isProd ? undefined : `http://${internalHost}:3000`,
+  // Configure assetPrefix for different environments
+  assetPrefix: process.env.NODE_ENV === "production" && !process.env.VERCEL ? undefined : 
+               process.env.VERCEL ? undefined : 
+               `http://${internalHost}:3000`,
 };
 
 export default nextConfig;

@@ -9,7 +9,7 @@ const nunito = Nunito({
 });
 
 export const metadata = {
-  title: "PrioSpace",
+  title: "CorgiTodo",
   description: "Focus on what matters.",
 };
 

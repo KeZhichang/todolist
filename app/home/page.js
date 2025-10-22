@@ -66,12 +66,12 @@ export default function LandingPage() {
   };
 
   const handleStarGitHub = () => {
-    window.open("https://github.com/anoyrc/priospace", "_blank");
+    window.open("https://github.com/anoyrc/corgitodo", "_blank");
   };
 
   const handleDownloadWindows = () => {
     window.open(
-      "https://github.com/AnoyRC/priospace/releases/download/0.1.3/priospace_0.1.3_x64-setup.exe",
+      "https://github.com/AnoyRC/corgitodo/releases/download/0.1.3/corgitodo_0.1.3_x64-setup.exe",
       "_blank"
     );
   };
@@ -100,13 +100,13 @@ export default function LandingPage() {
               className="font-heading text-3xl font-extrabold flex flex-col items-center gap-4"
             >
               <a
-                href="https://peerlist.io/anoyroyc/project/priospace"
+                href="https://peerlist.io/anoyroyc/project/corgitodo"
                 target="_blank"
                 rel="noreferrer"
               >
                 <img
                   src="https://peerlist.io/api/v1/projects/embed/PRJHOK87KBKJLPKKPHPQ7LADJQK697?showUpvote=false&theme=light"
-                  alt="PrioSpace"
+                  alt="CorgiTodo"
                   style={{ width: "auto", height: "72px" }}
                 />
               </a>

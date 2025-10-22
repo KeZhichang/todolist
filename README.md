@@ -68,8 +68,8 @@ A beautiful, modern productivity app that combines task management with Pomodoro
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/anoyrc/priospace.git
-   cd priospace
+   git clone https://github.com/anoyrc/corgitodo.git
+   cd corgitodo
    ```
 
 2. **Install dependencies**
@@ -127,7 +127,7 @@ A beautiful, modern productivity app that combines task management with Pomodoro
 ## 📁 Project Structure
 
 ```
-priospace/
+corgitodo/
 ├── app/                    # Next.js App Router
 │   ├── globals.css        # Global styles and Tailwind imports
 │   ├── layout.tsx         # Root layout with providers
@@ -254,7 +254,7 @@ For production deployment of the WebRTC server:
 
 ## 🐛 Bug Reports & Feature Requests
 
-Please use the [GitHub Issues](https://github.com/anoyrc/priospace/issues) page to:
+Please use the [GitHub Issues](https://github.com/anoyrc/corgitodo/issues) page to:
 - Report bugs with detailed reproduction steps
 - Request new features with clear use cases
 - Discuss improvements and suggestions

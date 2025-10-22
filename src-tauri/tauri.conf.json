@@ -1,8 +1,8 @@
 {
   "$schema": "../node_modules/@tauri-apps/cli/config.schema.json",
-  "productName": "priospace",
+  "productName": "corgitodo",
   "version": "0.1.2",
-  "identifier": "com.anoyrc.priospace",
+  "identifier": "com.anoyrc.corgitodo",
   "build": {
     "frontendDist": "../out",
     "devUrl": "http://localhost:3000",
@@ -12,7 +12,7 @@
   "app": {
     "windows": [
       {
-        "title": "priospace",
+        "title": "corgitodo",
         "width": 490,
         "height": 900,
         "resizable": true,
