@@ -394,6 +394,7 @@ function TaskItem({
   level = 0,
   isSubtask = false,
 }) {
+  const { t } = useLanguage();
   const tagInfo = getTagInfo(task.tag);
   const subtasks = task.subtasks || [];
   const hasSubtasks = subtasks.length > 0;

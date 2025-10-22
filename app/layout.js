@@ -1,6 +1,6 @@
 import "./globals.css";
-
 import { Nunito } from "next/font/google";
+import { generatePageSEO } from "@/lib/seo";
 
 const nunito = Nunito({
   subsets: ["latin"],
@@ -8,14 +8,11 @@ const nunito = Nunito({
   variable: "--font-nunito",
 });
 
-export const metadata = {
-  title: "CorgiTodo",
-  description: "Focus on what matters.",
-};
+export const metadata = generatePageSEO('home');
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
+    <html lang="zh-CN">
       <body
         className={`${nunito.variable} antialiased font-nunito`}
         suppressHydrationWarning

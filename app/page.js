@@ -18,6 +18,7 @@ import { IntroScreen } from "@/components/intro-screen";
 import { WebRTCShareModal } from "@/components/webrtc-share-modal";
 import { LanguageSwitcher } from "@/components/language-switcher";
 import { useLanguage } from "@/lib/useLanguage";
+import { generateStructuredData } from "@/lib/seo";
 
 export default function Home() {
   const { t, isInitialized } = useLanguage();
@@ -957,6 +958,14 @@ export default function Home() {
 
   return (
     <>
+      {/* JSON-LD Structured Data */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(generateStructuredData('home'))
+        }}
+      />
+      
       <AnimatePresence>
         {showIntroScreen && (
           <IntroScreen onAnimationComplete={() => setShowIntroScreen(false)} />
